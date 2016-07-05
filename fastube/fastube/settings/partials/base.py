@@ -123,9 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "fastube", "static"),        
+    os.path.join(BASE_DIR, "fastube", "static"),
 ]
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT_DIR, "dist", "static")
 
 # AUTH
 AUTH_USER_MODEL = "users.User"
