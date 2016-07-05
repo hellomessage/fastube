@@ -1,6 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-#from django.db.models.signals import post_save
+# from django.db.models.signals import post_save
 
 
 class User(AbstractUser):
@@ -15,13 +15,10 @@ class User(AbstractUser):
     # 모델을 상속할 수 없도록 되어있음
 
 # class UserProfile(models.Model):
-#      
 #     user = models.OneToOneField(User)
 #     # User:UserProfile = 1:1
 #     # user => UserProfile ( O ) ==> post_save signal
-# 
 # post_save.connect( , sender=User)
-# 
 # @receiver(post_save, sender=User)
 # def post_save_user(sender, instance, created, **kwargs):
 #     if created:
