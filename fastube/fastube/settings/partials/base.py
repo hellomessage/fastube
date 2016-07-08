@@ -76,6 +76,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'fastube.wsgi.application'
 
+# dj-database-url
+# https://github.com/kennethreitz/dj-database-url
+# import dj_database_url
+# DATABASES = {}
+# DATABASES['default'] = dj_database_url.config(
+#     default='postgres://hanseungjun:hans7253@localhost:27017/fastube',
+# )
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases

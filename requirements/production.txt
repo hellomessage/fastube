@@ -1,2 +1,6 @@
 Django
 django-pipeline
+<<<<<<< HEAD
+=======
+dj-database-url
+>>>>>>> feature/ssh
