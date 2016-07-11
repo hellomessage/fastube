@@ -1,6 +1,4 @@
 Django
 django-pipeline
-<<<<<<< HEAD
-=======
+python-social-auth
 dj-database-url
->>>>>>> feature/ssh
