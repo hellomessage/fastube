@@ -35,4 +35,4 @@ class LoginView(View):
             )
             return redirect(next_url)
 
-        return redirect(reverse("login"))
+        return redirect(reverse("users:login"))
