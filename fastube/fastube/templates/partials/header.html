@@ -1,11 +1,14 @@
 <header>
     <h1>Header</h1>
     <ul>
-        <li>
-            <a href="{% url "login"%}">Login</a>
-        </li>
-        <li>
-            <a href="{% url "signup"%}">Sigunp</a>
-        </li>
+        {% if request.user.is_authenticated %}
+        {% else %}
+            <li>
+                <a href="{% url "login"%}">Login</a>
+            </li>
+            <li>
+                <a href="{% url "signup"%}">Sigunp</a>
+            </li>
+        {% endif %}
     </ul>
 </header>
