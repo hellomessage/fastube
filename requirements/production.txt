@@ -1,1 +1,4 @@
 Django
+django-pipeline
+python-social-auth
+dj-database-url

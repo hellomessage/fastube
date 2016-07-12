@@ -1,0 +1,17 @@
+<header>
+    <h1>Header</h1>
+    <ul>
+        {% if request.user.is_authenticated %}
+            <li>
+                <a href="{% url "users:logout"%}">Logout</a>
+            </li>
+        {% else %}
+            <li>
+                <a href="{% url "users:login"%}">Login</a>
+            </li>
+            <li>
+                <a href="{% url "users:signup"%}">Sigunp</a>
+            </li>
+        {% endif %}
+    </ul>
+</header>
