@@ -161,16 +161,3 @@ PIPELINE = {
         }
     }
 }
-
-# AUTH
-AUTH_USER_MODEL = "users.User"
-
-LOGIN_URL = "/login/"
-
-SIGNUP_SUCCESS_MESSAGE = "성공적으로 회원가입 되었습니다."
-LOGIN_SUCCESS_MESSAGE = "성공적으로 로그인 되었습니다."
-LOGOUT_SUCCESS_MESSAGE = "성공적으로 로그아웃 되었습니다."
-
-AUTHENTICATION_BACKENDS = [
-    "django.contrib.auth.backends.ModelBackend",
-]

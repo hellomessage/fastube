@@ -21,8 +21,9 @@ from fastube.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view(), name="home"),
 
-    url(r'^', include("users.urls", namespace="users")),
     url('', include('social.apps.django_app.urls', namespace='social')),
+
+    url(r'^$', HomeView.as_view(), name="home"),
+    url(r'^', include("users.urls", namespace="users")),
 ]
