@@ -26,4 +26,5 @@ urlpatterns = [
 
     url(r'^$', HomeView.as_view(), name="home"),
     url(r'^', include("users.urls", namespace="users")),
+    url(r'^posts/', include("posts.urls", namespace="posts")),
 ]
