@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'fastube',
     'users',
+    'posts',
 ]
 
 MIDDLEWARE_CLASSES = [
